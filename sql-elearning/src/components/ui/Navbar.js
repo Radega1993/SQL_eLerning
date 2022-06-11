@@ -25,7 +25,7 @@ export const Navbar = () => {
                         className="nav-item nav-link"
                         to="/"
                     >
-                        Home
+                        Documentación
                     </NavLink>
 
                     <NavLink
@@ -33,6 +33,13 @@ export const Navbar = () => {
                         to="/memory"
                     >
                         Memory
+                    </NavLink>
+
+                    <NavLink
+                        className="nav-item nav-link"
+                        to="/sort"
+                    >
+                        Reordenar
                     </NavLink>
                 </div>
             </div>

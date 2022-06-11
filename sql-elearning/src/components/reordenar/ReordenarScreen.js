@@ -10,7 +10,12 @@ import { useForm } from '../../hooks/useForm';
 
 const sqlQueries = [
   {"frase": "select * from employees", nivel: 1},
-  {"frase": "select first_name, last_name from employees where employee_id = 100", nivel: 2}
+  {"frase": "select first_name, last_name from employees where employee_id = 100", nivel: 2},
+  {"frase": "SELECT E.first_name, E.last_name, FROM employees E where E.department_id = 90", nivel: 3},
+  {"frase": "SELECT E.first_name, E.last_name, E.department_id, D.department_name FROM employees E JOIN departments D ON E.department_id = D.department_id", nivel: 3},
+  {"frase": "SELECT COUNT(*) FROM employees WHERE salary = 4800;", nivel: 3},
+  {"frase": "SELECT AVG(salary) FROM employees", nivel: 3}
+
 ]
 
 export const ReordenarScreen = () => {
